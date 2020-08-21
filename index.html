@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Toka Matcha</title>
+    
+    <style>  
+        img { 
+            width: 100%; 
+            height: auto; 
+        }
+    </style>  
+
+    <script language="javascript" type="text/javascript">
+        var images = ["img/logo_orange.png", "img/logo_black.png"];
+        setInterval("changeImage()", 250);
+        var x=0;
+
+        function changeImage() {
+            document.getElementById("target").src = images[x]
+            x++;
+            if (images.length == x) { x = 0; }
+        }
+    </script>
+    
+  </head>
+  <body>
+        <img id="target" src="img/logo_orange.png">
+  </body>
+</html>
